@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Couchbase;
 using CouchbaseDemo.Examples;
 
-var cluster = await Cluster.ConnectAsync("couchbase://192.168.0.151", "Administrator", "password");
+var cluster = await Cluster.ConnectAsync("couchbase://localhost", "Administrator", "password");
 
 var queryingExamples =  new QueryingExamples(cluster);
 await queryingExamples.FetchUsingKey("0");
