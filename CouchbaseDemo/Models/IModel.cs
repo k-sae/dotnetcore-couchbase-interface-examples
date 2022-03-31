@@ -1,6 +1,8 @@
-namespace CouchbaseDemo.Models;
-
-interface IModel
+namespace CouchbaseDemo.Models
 {
-    public int id { get; set; }
+
+    interface IModel
+    {
+        public int id { get; set; }
+    }
 }
